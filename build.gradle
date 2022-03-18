@@ -1,0 +1,21 @@
+//自己本身的配置
+apply plugin: 'java-library'//创建的是model-java library
+apply plugin: 'groovy'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.1547381966@qq.com'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation gradleApi()//implements Plugin<Project>引用gradle插件里面的api
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:4.0.2'//获取android下面的apk用到android的东西，假如依赖
+}
+
+
+
+
+
+
+
+
